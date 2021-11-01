@@ -2,7 +2,7 @@
 
 
 안드로이드용
-apk 다운로드 : [apk 다운로드 링크](https://drive.google.com/uc?id=1Hv-WSoDO22iTAi6IkochR6_QbXtCcaR5&export=download)
+apk 다운로드 : [apk 다운로드 링크](https://drive.google.com/u/0/uc?id=1MTjAEcNi-E8g5I3uOFa9UwkHNiUCvlTM&export=download)
 
 
 # 사용법
