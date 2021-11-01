@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">genshin_autocheck</string>
+    <string name="ltoken">ltoken</string>
+    <string name="ltuid">ltuid</string>
+
+</resources>
