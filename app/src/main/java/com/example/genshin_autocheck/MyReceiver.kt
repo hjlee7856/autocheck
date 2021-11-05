@@ -41,7 +41,10 @@ class MyReceiver : BroadcastReceiver() {
             Context.NOTIFICATION_SERVICE
         ) as NotificationManager
 
-        senddata(context)
+
+        val appContext = context?.applicationContext ?: return
+        senddata(appContext)
+
         createNotificationChannel()
         deliverNotification(context)
     }
@@ -58,7 +61,7 @@ class MyReceiver : BroadcastReceiver() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val api = retrofit.create(CheckAPI::class.java)
-        val cookies = "ltuid=" + ltuid + ";" + "ltoken=" +  ltoken + ";"
+        val cookies = "ltuid=${ltuid};ltoken=${ltoken};"
         val PostCookie = api.putCookie(cookies)
         PostCookie.enqueue(object : Callback<Message> {
             override fun onResponse(call: Call<Message>, response: Response<Message>) {
